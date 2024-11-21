@@ -1,0 +1,43 @@
+
+/*-->card 
+/* .card{
+  border:1px solid black;
+  border-radius:10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.085);
+  padding:20px;
+  margin:10px;
+  text-align:center;
+  display:inline-block;
+
+}
+.card .cardImage{
+  max-width: 60%;
+  height:auto;  
+  border-radius: 50%;
+  margin-bottom: 10px;
+
+}
+
+.card .shreya{
+  font-family:Arial, Helvetica, sans-serif;
+  margin:0;
+  color:hsl(0, 0%, 20%)
+}
+.card .card-text{
+  font-family:Arial, Helvetica, sans-serif;
+  margin:0;
+  color:hsl(0, 0%, 30%)
+} */
+
+
+/* Buton*/
+.button{
+
+  background-color: hsl(215, 88%, 61%);
+  color:aliceblue;
+  padding:10px 20px;
+  border-radius:5px;
+  border:none;
+  cursor:pointer;
+
+}
