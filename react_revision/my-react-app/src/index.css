@@ -31,13 +31,4 @@
 
 
 /* Buton*/
-.button{
 
-  background-color: hsl(215, 88%, 61%);
-  color:aliceblue;
-  padding:10px 20px;
-  border-radius:5px;
-  border:none;
-  cursor:pointer;
-
-}

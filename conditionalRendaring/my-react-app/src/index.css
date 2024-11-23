@@ -1,0 +1,9 @@
+.welcome-message{
+    font: 1em sans-serif;
+    background-color: hsl(129, 79%, 49%);
+    color:aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    margin:0;
+
+}
