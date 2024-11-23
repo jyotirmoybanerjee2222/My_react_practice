@@ -2,7 +2,7 @@ import UserGretting from "./UserGreeting.jsx"
 
 function App(){
   return(
-    <UserGretting isLoggedIn = {false} username="BroCode"/> 
+    <UserGretting isLoggedIn = {true} username="BroCode"/> 
    )
 }
 
