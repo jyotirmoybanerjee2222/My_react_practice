@@ -13,9 +13,9 @@ function UserGretting(props)
 
 }
 
-UserGretting.PropTypes ={
+UserGretting.Proptypes ={
     isLoggedIn:PropTypes.bool,
-    username:propTpes.string,
+    username:PropTypes.string,
 }
 
 UserGretting.defaultProps = {
