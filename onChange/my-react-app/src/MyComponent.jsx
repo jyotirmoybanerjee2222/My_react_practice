@@ -43,7 +43,7 @@ function MyComponent(){
 
         <label>
             <input type="radio" value="Pickup" 
-            checked={Shipping==="Pickup"} onChange ={SetShipping}/>
+            checked={Shipping==="Pickuclearp"} onChange ={SetShipping}/>
             Pickup
         </label>
         <label>
