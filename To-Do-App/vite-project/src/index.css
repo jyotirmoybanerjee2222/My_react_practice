@@ -1,4 +1,7 @@
-.to-Do-List{
+body{
+background-color: #3f5efb;
+}
+.to-do-list{
   font-family:Arial,sans-serif;
   text-align: center;
   margin-top:100px;
