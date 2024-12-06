@@ -1,0 +1,53 @@
+body{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+}
+.stopwatch{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  border:5px solid;
+  border-radius: 50px;
+  background-image: linear-gradient(red, yellow);
+}
+.display{
+  font-size:5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color:hsl(0, 0%, 30%);
+  text-shadow:2px 2px 2px hsla(0,0%,0%,0.75);
+  margin-bottom: 25px;
+  
+}
+.controls button{
+   font-size: 1.5 rem;
+   font-weight:bold;
+   padding:10px;
+   margin:12px;
+   border:none;
+   border-radius: 10px;
+   cursor:pointer;
+   color:white;
+   transition: background-color 0.5s ease;
+}
+.start{
+  background-color: rgb(8, 188, 8);
+
+}
+.start:hover{
+  background-color: green;
+}
+.stop{
+  background-color: blue;
+}
+.stop:hover{
+  background-color: rgb(2, 2, 138);
+}
+.reset{
+  background-color: red;
+}
+.reset:hover{
+  background-color: rgb(202, 0, 0);
+}
