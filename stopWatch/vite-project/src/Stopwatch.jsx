@@ -3,14 +3,14 @@ import React,{useState,useEffect,useRef} from 'react';
 
 function Stopwatch(){
 
-    const [isRunniung,setISRunning] = useState(false);
+    const [isRunning,setISRunning] = useState(false);
     const [elapsedTime,setElapedTime] = useState(0);
 
     const intervalIdRef = useRef(null);
     const startTimeRef = useRef(0);
 
     useEffect(() => {
-        if(isRunniung){
+        if(isRunning){
             intervalIdRef.current = setInterval(() =>{
             setElapedTime(Date.now()-startTimeRef.current);
            },10);
@@ -20,7 +20,7 @@ function Stopwatch(){
             clearInterval(intervalIdRef.current);
         })
 
-    },[isRunniung]);
+    },[isRunning]);
 
     function start(){
          setISRunning(true);
@@ -39,20 +39,23 @@ function Stopwatch(){
     }
     function stop(){
         setISRunning(false);
-
+        clearInterval(intervalIdRef.current);
 
     }
     function reset(){
        setElapedTime(0);
        setISRunning(false);
+       clearInterval(intervalIdRef.current);
+       
+       
 
     }
     return(<div className='stopwatch'>
         <div className='display'>{formatTime()}</div>
         <div className='controls'>
             <button onClick={start} className='start'>Start</button>
-            <button onClick={start} className='stop'>stop</button>
-            <button onClick={start} className='reset'>ReSet</button>
+            <button onClick={stop} className='stop'>Stop</button>
+            <button onClick={reset} className='reset'>ReSet</button>
         </div>
        
     
