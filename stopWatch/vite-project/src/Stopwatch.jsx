@@ -33,7 +33,9 @@ function Stopwatch(){
         let minutes = Math.floor(elapsedTime/(1000*60)%60);
         let seconds = Math.floor(elapsedTime/1000%(60));
 
-        return `${hours}:${minutes}:${seconds}`;
+        return `${hours.toString().padStart(2, '0')}:${minutes
+            .toString()
+            .padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     }
     function stop(){
         setISRunning(false);
